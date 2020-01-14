@@ -21,8 +21,7 @@ Experiments in three different domains and with six datasets demonstrate that th
   error rate and a subjective human rating study. Training a policy from prior knowledge from a different domain is 
   consistently better than pure in-domain training by up to 10%.
 
-![alt text](/img/res.png)
-
+<img src="/img/res.png" alt="drawing" width="200"/>
 
 # Code
 
@@ -39,4 +38,7 @@ seq2seq-prior.py inherits weights from a source domain and then trains on top of
 Domains can be varied by giving different input datasets for training and testing (see towards top of scripts), for example:
 
 INPUT_DATA_FILE = "/data/give_amr.txt"
+
 TEST_FILE = "/data/gre_amr.txt"
+
+(to be specified in the scripts, see towards top)
