@@ -14,14 +14,14 @@ language in a new unseen target domain from training in a source domain even if 
 
 The basic learning task is such that a model tries to generate a set of common paraphrases from an AMR input:
 
-<img src="/img/samples.png" alt="drawing" width="700"/>
+<img src="/img/amrs.png" alt="drawing" width="500"/>
 
 Experiments in three different domains and with six datasets demonstrate that the lexical-syntactic constructions learnt in one domain can be transferred to new domains and 
  achieve up to 75-100% of the performance of in-domain training. This is based on objective metrics such as BLEU and semantic
   error rate and a subjective human rating study. Training a policy from prior knowledge from a different domain is 
   consistently better than pure in-domain training by up to 10%.
 
-<img src="/img/res.png" alt="drawing" width="600"/>
+<img src="/img/res.png" alt="drawing" width="400"/>
 
 # Code
 
@@ -29,16 +29,16 @@ The data folder contains data from the available domains (not all are complete i
 
 There are 3 main scripts: 
 
-seq2seq-indomain.py trains an LSTM in the in-domain setting.
+<code>seq2seq-indomain.py</code> trains an LSTM in the in-domain setting.
 
-seq2seq-outofdomain.py inherits weights from a source domain and evaluates in a new target domain.
+<code>seq2seq-outofdomain.py</code> inherits weights from a source domain and evaluates in a new target domain.
 
-seq2seq-prior.py inherits weights from a source domain and then trains on top of that in a target domain.
+<code>seq2seq-prior.py</code> inherits weights from a source domain and then trains on top of that in a target domain.
 
 Domains can be varied by giving different input datasets for training and testing (see towards top of scripts), for example:
 
-INPUT_DATA_FILE = "/data/give_amr.txt"
+<code>INPUT_DATA_FILE = "/data/give_amr.txt"</code>
 
-TEST_FILE = "/data/gre_amr.txt"
+<code>TEST_FILE = "/data/gre_amr.txt"</code>
 
 (to be specified in the scripts, see towards top)
