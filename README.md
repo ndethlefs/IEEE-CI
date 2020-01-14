@@ -14,7 +14,7 @@ language in a new unseen target domain from training in a source domain even if 
 
 The basic learning task is such that a model tries to generate a set of common paraphrases from an AMR input:
 
-<img src="/img/amrs.png" alt="drawing" width="500"/>
+<img src="/img/amrs.png" alt="drawing" width="600"/>
 
 Experiments in three different domains and with six datasets demonstrate that the lexical-syntactic constructions learnt in one domain can be transferred to new domains and 
  achieve up to 75-100% of the performance of in-domain training. This is based on objective metrics such as BLEU and semantic
@@ -42,3 +42,4 @@ Domains can be varied by giving different input datasets for training and testin
 <code>TEST_FILE = "/data/gre_amr.txt"</code>
 
 (to be specified in the scripts, see towards top)
+
