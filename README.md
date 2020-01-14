@@ -14,14 +14,14 @@ language in a new unseen target domain from training in a source domain even if 
 
 The basic learning task is such that a model tries to generate a set of common paraphrases from an AMR input:
 
-![alt text](/img/samples.png)
+<img src="/img/samples.png" alt="drawing" width="700"/>
 
 Experiments in three different domains and with six datasets demonstrate that the lexical-syntactic constructions learnt in one domain can be transferred to new domains and 
  achieve up to 75-100% of the performance of in-domain training. This is based on objective metrics such as BLEU and semantic
   error rate and a subjective human rating study. Training a policy from prior knowledge from a different domain is 
   consistently better than pure in-domain training by up to 10%.
 
-<img src="/img/res.png" alt="drawing" width="200"/>
+<img src="/img/res.png" alt="drawing" width="600"/>
 
 # Code
 
